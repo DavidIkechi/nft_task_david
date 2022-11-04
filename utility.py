@@ -8,7 +8,7 @@ def load_csv_file(filename):
 
 
 def hash_data(data):    
-    return hashlib.sha256(password.encode()).hexdigest()
+    return hashlib.sha256(data.encode()).hexdigest()
 
 def get_valid_row_count(df) -> int:
     return len(df)
